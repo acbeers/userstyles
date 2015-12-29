@@ -1,0 +1,22 @@
+@-moz-document url-prefix("https://outlook.office365.com/owa/?realm=tableau.com#path=/mail") {
+/* Reduce padding between elements of the message list */
+._lvv_M {padding-top: 2px; }
+._lvv_P { margin-top: 0px; }
+._lvv_U { margin-top: 0px; }
+
+/* Shorter message height */
+._lvv_B._lvv_C {
+    height: 65px;
+    border-bottom: 1px dotted lightgray;
+}
+
+/* Background on unread messages to make them stand out */
+:not([aria-selected="true"]) > [aria-label~="Unread,"] {
+    background-color: #f7fff7;
+}
+
+/* This appears to be section headers in the message list */
+._lvv_91 { line-height: 12px; }
+._lvv_a1 { background-color: #f0f0f0; }
+
+}
